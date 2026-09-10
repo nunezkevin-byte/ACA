@@ -326,6 +326,21 @@ ul {
   -webkit-backdrop-filter: blur(8px);
 }
 
+.info-card-link {
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.info-card-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(37, 211, 102, 0.5);
+  background: rgba(38, 43, 64, 0.85);
+}
+
+.whatsapp-icon {
+  background: rgba(37, 211, 102, 0.2) !important;
+  color: #25D366 !important;
+}
+
 .info-icon {
   display: flex;
   align-items: center;
