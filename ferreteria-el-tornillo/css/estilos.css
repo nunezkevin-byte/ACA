@@ -514,19 +514,26 @@ ul {
   border-color: rgba(4, 116, 196, 0.45);
 }
 
-.card-icon-wrapper {
-  width: 58px;
-  height: 58px;
+.card-image-wrapper {
+  width: 100%;
+  height: 190px;
   border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
   margin-bottom: 20px;
-  transition: transform var(--transition-fast);
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
 }
 
-.product-card:hover .card-icon-wrapper {
-  transform: scale(1.08);
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.product-card:hover .card-img {
+  transform: scale(1.06);
 }
 
 /* Colores de acento por categoría tomados de la paleta */
