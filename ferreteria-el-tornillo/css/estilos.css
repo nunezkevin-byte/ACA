@@ -1,28 +1,30 @@
 /* ==========================================================================
    Ferretería El Tornillo - Estilos Principales
-   Diseño: Moderno Industrial / Responsivo / Sin dependencias
+   Paleta: Sapphire nightfall whisper
+   Colores: #0474C4 | #5379AE | #2C444C | #A8C4EC | #06457F | #262B40
    ========================================================================== */
 
 :root {
-  /* Paleta de Colores */
-  --primary: #ea580c;        /* Naranja industrial vibrante */
-  --primary-hover: #c2410c;
-  --primary-light: #ffedd5;
-  --primary-glow: rgba(234, 88, 12, 0.25);
+  /* Paleta "Sapphire nightfall whisper" */
+  --primary: #0474C4;         /* Azul zafiro brillante */
+  --primary-hover: #06457F;   /* Azul zafiro profundo */
+  --primary-light: #A8C4EC;   /* Azul hielo suave */
+  --primary-glow: rgba(4, 116, 196, 0.28);
 
-  --accent: #f59e0b;         /* Ámbar / Dorado industrial */
-  --accent-light: #fef3c7;
+  --accent: #5379AE;          /* Azul pizarra intermedio */
+  --accent-light: #A8C4EC;    /* Icy sky blue */
+  --teal-slate: #2C444C;      /* Pizarra verdosa oscura */
 
-  --dark-900: #0f172a;       /* Carbón pizarra profundo */
-  --dark-800: #1e293b;
-  --dark-700: #334155;
-  --text-muted: #64748b;
-  --text-light: #94a3b8;
+  --dark-900: #262B40;        /* Azul noche profundo / Carbón */
+  --dark-800: #2C444C;        /* Pizarra oscuro */
+  --dark-700: #06457F;        /* Zafiro marino profundo */
+  --text-muted: #5379AE;      /* Texto secundario pizarra */
+  --text-light: #A8C4EC;      /* Texto claro en fondos oscuros */
 
-  --bg-page: #f8fafc;
+  --bg-page: #f4f7fb;         /* Fondo de página con matiz zafiro suave */
   --bg-card: #ffffff;
-  --border-color: #e2e8f0;
-  --border-focus: #ea580c;
+  --border-color: #d8e2ef;
+  --border-focus: #0474C4;
 
   /* Estados de retroalimentación */
   --success-bg: #ecfdf5;
@@ -37,11 +39,11 @@
   --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
-  /* Sombras y elevaciones */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
-  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
+  /* Sombras y elevaciones con tinte zafiro */
+  --shadow-sm: 0 1px 2px 0 rgba(38, 43, 64, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(38, 43, 64, 0.08), 0 2px 4px -2px rgba(38, 43, 64, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(4, 116, 196, 0.1), 0 4px 6px -4px rgba(38, 43, 64, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(38, 43, 64, 0.15), 0 8px 10px -6px rgba(4, 116, 196, 0.1);
 
   /* Transiciones */
   --transition-fast: 0.18s ease;
@@ -105,10 +107,10 @@ ul {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(15, 23, 42, 0.95);
+  background: rgba(38, 43, 64, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(168, 196, 236, 0.15);
   color: #ffffff;
   transition: all var(--transition-normal);
 }
@@ -135,7 +137,7 @@ ul {
   background: linear-gradient(135deg, var(--primary), var(--accent));
   color: #ffffff;
   border-radius: var(--radius-md);
-  box-shadow: 0 4px 10px var(--primary-glow);
+  box-shadow: 0 4px 12px var(--primary-glow);
 }
 
 .brand-text {
@@ -156,7 +158,7 @@ ul {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--accent);
+  color: var(--accent-light);
   font-weight: 600;
 }
 
@@ -169,7 +171,7 @@ ul {
 .nav-link {
   font-size: 0.95rem;
   font-weight: 500;
-  color: #cbd5e1;
+  color: #d1dfed;
   position: relative;
   padding: 6px 0;
 }
@@ -237,7 +239,7 @@ ul {
    ========================================================================== */
 .hero-section {
   position: relative;
-  background: linear-gradient(175deg, #0f172a 0%, #1e293b 65%, #334155 100%);
+  background: linear-gradient(175deg, #262B40 0%, #06457F 60%, #2C444C 100%);
   color: #ffffff;
   padding: 70px 0 90px;
   overflow: hidden;
@@ -247,8 +249,8 @@ ul {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 80% 20%, rgba(234, 88, 12, 0.15) 0%, transparent 50%),
-              radial-gradient(circle at 10% 80%, rgba(245, 158, 11, 0.1) 0%, transparent 40%);
+  background: radial-gradient(circle at 80% 20%, rgba(4, 116, 196, 0.22) 0%, transparent 50%),
+              radial-gradient(circle at 10% 80%, rgba(168, 196, 236, 0.15) 0%, transparent 40%);
   pointer-events: none;
 }
 
@@ -266,20 +268,20 @@ ul {
   align-items: center;
   gap: 8px;
   padding: 6px 14px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(168, 196, 236, 0.12);
+  border: 1px solid rgba(168, 196, 236, 0.25);
   border-radius: var(--radius-full);
   font-size: 0.85rem;
-  color: #e2e8f0;
+  color: var(--text-light);
   margin-bottom: 20px;
 }
 
 .status-indicator {
   width: 8px;
   height: 8px;
-  background-color: #22c55e;
+  background-color: #38bdf8;
   border-radius: 50%;
-  box-shadow: 0 0 8px #22c55e;
+  box-shadow: 0 0 8px #38bdf8;
 }
 
 .hero-title {
@@ -292,14 +294,14 @@ ul {
 }
 
 .hero-title .highlight {
-  background: linear-gradient(120deg, #f59e0b, #ea580c);
+  background: linear-gradient(120deg, #A8C4EC, #0474C4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hero-slogan {
   font-size: 1.15rem;
-  color: #cbd5e1;
+  color: #d1dfed;
   max-width: 540px;
   margin-bottom: 32px;
 }
@@ -316,12 +318,12 @@ ul {
   display: flex;
   align-items: center;
   gap: 14px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(38, 43, 64, 0.65);
+  border: 1px solid rgba(168, 196, 236, 0.18);
   padding: 12px 18px;
   border-radius: var(--radius-md);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .info-icon {
@@ -330,8 +332,8 @@ ul {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: rgba(234, 88, 12, 0.2);
-  color: var(--accent);
+  background: rgba(4, 116, 196, 0.25);
+  color: var(--accent-light);
   border-radius: var(--radius-sm);
   flex-shrink: 0;
 }
@@ -345,7 +347,7 @@ ul {
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--text-light);
+  color: var(--accent-light);
   font-weight: 600;
 }
 
@@ -385,18 +387,18 @@ ul {
 .btn-primary:hover {
   background: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.35);
+  box-shadow: 0 6px 20px rgba(4, 116, 196, 0.4);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(168, 196, 236, 0.12);
   color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(168, 196, 236, 0.25);
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.18);
-  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(168, 196, 236, 0.22);
+  border-color: rgba(168, 196, 236, 0.4);
   transform: translateY(-2px);
 }
 
@@ -413,8 +415,8 @@ ul {
 .feature-banner-box {
   width: 100%;
   max-width: 360px;
-  background: linear-gradient(145deg, rgba(30, 41, 59, 0.85), rgba(15, 23, 42, 0.95));
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(145deg, rgba(44, 68, 76, 0.9), rgba(38, 43, 64, 0.95));
+  border: 1px solid rgba(168, 196, 236, 0.2);
   border-radius: var(--radius-lg);
   padding: 32px 24px;
   box-shadow: var(--shadow-xl);
@@ -426,7 +428,7 @@ ul {
 .box-stat {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
+  border-bottom: 1px dashed rgba(168, 196, 236, 0.2);
   padding-bottom: 16px;
 }
 
@@ -439,13 +441,13 @@ ul {
   font-family: var(--font-heading);
   font-size: 2rem;
   font-weight: 800;
-  color: var(--accent);
+  color: var(--accent-light);
   line-height: 1.1;
 }
 
 .stat-label {
   font-size: 0.9rem;
-  color: #cbd5e1;
+  color: #d1dfed;
 }
 
 /* ==========================================================================
@@ -509,7 +511,7 @@ ul {
 .product-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(234, 88, 12, 0.4);
+  border-color: rgba(4, 116, 196, 0.45);
 }
 
 .card-icon-wrapper {
@@ -527,25 +529,25 @@ ul {
   transform: scale(1.08);
 }
 
-/* Colores de acento por categoría */
+/* Colores de acento por categoría tomados de la paleta */
 .tool-color {
-  background-color: #ffedd5;
-  color: #ea580c;
+  background-color: rgba(4, 116, 196, 0.12);
+  color: #0474C4;
 }
 
 .paint-color {
-  background-color: #e0f2fe;
-  color: #0284c7;
+  background-color: rgba(83, 121, 174, 0.14);
+  color: #5379AE;
 }
 
 .screw-color {
-  background-color: #f3e8ff;
-  color: #7c3aed;
+  background-color: rgba(6, 69, 127, 0.12);
+  color: #06457F;
 }
 
 .electric-color {
-  background-color: #fef3c7;
-  color: #d97706;
+  background-color: rgba(44, 68, 76, 0.14);
+  color: #2C444C;
 }
 
 .card-tag {
@@ -554,8 +556,8 @@ ul {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--text-muted);
-  background: var(--bg-page);
+  color: var(--dark-700);
+  background: #f0f5fc;
   padding: 3px 10px;
   border-radius: var(--radius-full);
   margin-bottom: 10px;
@@ -633,7 +635,7 @@ ul {
 }
 
 .panel-subtitle {
-  color: #94a3b8;
+  color: var(--accent-light);
   font-size: 0.95rem;
   margin-bottom: 28px;
 }
@@ -654,8 +656,8 @@ ul {
 .contact-icon {
   width: 44px;
   height: 44px;
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--accent);
+  background: rgba(168, 196, 236, 0.12);
+  color: var(--accent-light);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
@@ -672,24 +674,24 @@ ul {
 }
 
 .contact-item p {
-  color: #cbd5e1;
+  color: #d1dfed;
   font-size: 0.9rem;
 }
 
 .text-subtle {
   display: block;
   font-size: 0.8rem;
-  color: #94a3b8;
+  color: var(--accent-light);
   margin-top: 2px;
 }
 
 .business-promise {
-  background: rgba(234, 88, 12, 0.12);
+  background: rgba(4, 116, 196, 0.15);
   border-left: 3px solid var(--primary);
   padding: 14px 16px;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   font-size: 0.88rem;
-  color: #fdba74;
+  color: var(--accent-light);
 }
 
 /* Tarjeta del Formulario */
@@ -828,9 +830,9 @@ ul {
    ========================================================================== */
 .site-footer {
   background-color: var(--dark-900);
-  color: #94a3b8;
+  color: #d1dfed;
   padding: 48px 0 28px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(168, 196, 236, 0.12);
 }
 
 .footer-content {
@@ -861,7 +863,7 @@ ul {
 
 .footer-copy {
   font-size: 0.9rem;
-  color: #94a3b8;
+  color: #9db2c9;
 }
 
 .footer-links {
@@ -870,19 +872,19 @@ ul {
 }
 
 .footer-links a {
-  color: #cbd5e1;
+  color: #d1dfed;
   font-size: 0.92rem;
 }
 
 .footer-links a:hover {
-  color: var(--accent);
+  color: var(--accent-light);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(168, 196, 236, 0.12);
   padding-top: 22px;
   font-size: 0.84rem;
-  color: #64748b;
+  color: #7b95b2;
   text-align: center;
 }
 
@@ -931,11 +933,11 @@ ul {
     top: 72px;
     left: 0;
     right: 0;
-    background: rgba(15, 23, 42, 0.98);
+    background: rgba(38, 43, 64, 0.98);
     flex-direction: column;
     padding: 24px 20px 32px;
     gap: 18px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(168, 196, 236, 0.15);
     transform: translateY(-120%);
     transition: transform var(--transition-normal);
   }
